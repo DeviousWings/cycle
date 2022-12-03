@@ -20,8 +20,8 @@ def main():
     
     # create the cast
     cast = Cast()
-    cast.add_actor("snakes", Cycle(constants.RED))
-    cast.add_actor("snakes", Cycle(constants.GREEN))
+    cast.add_actor("cycles", Cycle(constants.RED))
+    cast.add_actor("cycles", Cycle(constants.GREEN))
     cast.add_actor("scores", Score())
    
     # start the game
