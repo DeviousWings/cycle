@@ -1,5 +1,6 @@
 import constants
 
+from game.casting.actor import Actor
 from game.casting.cast import Cast
 from game.casting.food import Food
 from game.casting.score import Score

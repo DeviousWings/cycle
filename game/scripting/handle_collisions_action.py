@@ -73,8 +73,8 @@ class HandleCollisionsAction(Action):
         """
         if self._is_game_over:
             cycle = cast.get_first_actor("cycles")
+            cycle = cast.get_second_actor("cycles")
             segments = cycle.get_segments()
-            food = cast.get_first_actor("foods")
 
             x = int(constants.MAX_X / 2)
             y = int(constants.MAX_Y / 2)
@@ -87,4 +87,3 @@ class HandleCollisionsAction(Action):
 
             for segment in segments:
                 segment.set_color(constants.WHITE)
-            food.set_color(constants.WHITE)

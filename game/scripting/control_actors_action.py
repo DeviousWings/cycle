@@ -46,7 +46,7 @@ class ControlActorsAction(Action):
             self._direction = Point(0, constants.CELL_SIZE)
         
         cycle = cast.get_first_actor("cycles")
-        cycle.turn_head(self._direction)
+        cycle.set_velocity(self._direction)
         
         cycle = cast.get_second_actor("cycles")
-        cycle.turn_head(self._direction)
+        cycle.set_velocity(self._direction)

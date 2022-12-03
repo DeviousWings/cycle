@@ -2,6 +2,9 @@ import pyray
 import constants
 
 
+
+
+
 class VideoService:
     """Outputs the game state. The responsibility of the class of objects is to draw the game state 
     on the screen. 
@@ -34,7 +37,7 @@ class VideoService:
         Args:
             actor (Actor): The actor to draw.
         """ 
-        text = actor.get_text()
+        text = actor.get_text(text)
         x = actor.get_position().get_x()
         y = actor.get_position().get_y()
         font_size = actor.get_font_size()

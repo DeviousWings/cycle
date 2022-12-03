@@ -47,6 +47,7 @@ class Cycle(Actor):
             segment.set_velocity(velocity)
             segment.set_text("#")
             segment.set_color(constants.GREEN)
+            segment.set_color(constants.RED)
             self._segments.append(segment)
 
     def turn_head(self, velocity):
